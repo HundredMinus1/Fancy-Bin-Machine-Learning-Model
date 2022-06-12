@@ -57,4 +57,4 @@ def predict():
         return "Internal Server Error, Using Method Get but not run the code"
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
