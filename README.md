@@ -11,7 +11,7 @@ File yang digunakan: `Model.ipynb`
 ## **💼 Dataset 💼**
 Dataset yang digunakan "Waste Classification Data" dari Kaggle menggunakan Kaggle API.
 
-`!kaggle datasets download techsash/waste-classification-data`
+`https://www.kaggle.com/datasets/techsash/waste-classification-data`
 
 ## **📍 Model Baseline📍**
 Model yang digunakan **Convolutional Neural Network (CNN)** yang terdiri dari beberapa lapisan parameter:
