@@ -1,21 +1,50 @@
-# Machine Learning
+# **📝 Waste Classification - by FancyBin** 
 
-Bangkit's Capstone Project : Fancy Bin
+Klasifikasi sampah anorganik dan organik menggunakan Tensorflow dan Keras (Deep Learning) berdasarkan input gambar.
 
-# Dataset
+File yang digunakan `Model.ipynb`
 
-Organic and anorganic dataset : https://www.kaggle.com/datasets/techsash/waste-classification-data
+## **✅ Team Machine Learning ✅**
+- Habib Septrian Priyanto
+- Juan Andrean Miliandza
 
-# Fancy Bin Team
+## **💼 Dataset 💼**
+Dataset yang digunakan "Waste Classification Data" dari Kagglemenggunakan Kaggle API.
 
-Machine Learning
-- Habib Septrian Priyanto (https://www.linkedin.com/in/habib-septrian-priyanto-1358801a7)
-- Juan Andrean Miliandza (https://www.linkedin.com/in/juan-andrean-milliandza-7a9654209)
+`!kaggle datasets download techsash/waste-classification-data`
 
-MD
-- Mohammad Abi (http://www.linkedin.com/in/mohammadabi)
-- Rizki Alamsyah (https://www.linkedin.com/in/rilamsyah11/)
+## **📍 Model Baseline📍**
+Model yang digunakan **Convolutional Neural Network (CNN)** yang terdiri dari beberapa lapisan parameter:
 
-CC
-- Muhammad Razi Rafly Algazali (https://www.linkedin.com/in/muhammad-razi-rafly-algazali-a2b34b235)
-- Muhammad Wildan (https://www.linkedin.com/in/muhammad-wildan-64b39b212) 
+- Conv2D: Lapisan konvolusi dengan 32 filter dan ukuran kernel (3,3).
+
+- MaxPooling2D: Lapisan pooling untuk mengurangi dimensi fitur.
+
+- Flatten: Mengubah fitur yang diekstrak menjadi bentuk vektor 1D.
+
+- Dense (64 neuron): Lapisan fully connected dengan fungsi aktivasi ReLU.
+
+- Dropout (0.2): Mengurangi overfitting dengan mengabaikan 20% dari neuron secara acak.
+
+- BatchNormalization: Normalisasi agar jaringan lebih stabil.
+
+- Output Layer: Menggunakan 1 neuron dengan aktivasi sigmoid untuk klasifikasi biner.
+
+## **📍 Hasil Evaluasi Model📍**
+
+Accuracy: 99.21%
+Validation Accuracy: 92.58%
+Epoch Total: 8
+
+# **💻 Application 💻** 
+Aplikasi berbasis Flask yang menyediakan endpoint untuk melakukan klasifikasi sampah berdasarkan gambar yang diunggah pengguna.
+
+File yang digunakan `app.ipynb`
+
+ ## **📍 Endpoint📍**
+ ### Prediksi Sampah
+
+- URL: /predict
+- Method: POST
+- Input: Gambar
+- Output: JSON yang berisi hasil klasifikasi (Organic atau Anorganic) beserta probabilitasnya.
