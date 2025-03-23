@@ -1,15 +1,15 @@
-# **📝 Waste Classification - by FancyBin** 
+# **📝 Waste Classification - by FancyBin `Model.ipynb`** 
 
 Klasifikasi sampah anorganik dan organik menggunakan Tensorflow dan Keras (Deep Learning) berdasarkan input gambar.
 
-File yang digunakan `Model.ipynb`
+File yang digunakan: `Model.ipynb`
 
 ## **✅ Team Machine Learning ✅**
 - Habib Septrian Priyanto
 - Juan Andrean Miliandza
 
 ## **💼 Dataset 💼**
-Dataset yang digunakan "Waste Classification Data" dari Kagglemenggunakan Kaggle API.
+Dataset yang digunakan "Waste Classification Data" dari Kaggle menggunakan Kaggle API.
 
 `!kaggle datasets download techsash/waste-classification-data`
 
@@ -32,14 +32,12 @@ Model yang digunakan **Convolutional Neural Network (CNN)** yang terdiri dari be
 
 ## **📍 Hasil Evaluasi Model📍**
 
-Accuracy: 99.21%
-Validation Accuracy: 92.58%
-Epoch Total: 8
+- Accuracy: 99.21%
+- Validation Accuracy: 92.58%
+- Epoch Total: 8
 
-# **💻 Application 💻** 
+# **💻 Application `app.ipynb` 💻** 
 Aplikasi berbasis Flask yang menyediakan endpoint untuk melakukan klasifikasi sampah berdasarkan gambar yang diunggah pengguna.
-
-File yang digunakan `app.ipynb`
 
  ## **📍 Endpoint📍**
  ### Prediksi Sampah
